@@ -1,0 +1,15 @@
+{
+	"name": "platform to Win32",
+	"description": "platform to Win32",
+	"version": "1.0",
+	"content_scripts": [
+		{
+			"js": ["changePlatform.js"],
+			"matches": ["<all_urls>"],
+			"run_at": "document_start"
+		}
+	],
+
+	"permissions": ["contextMenus", "tabs"],
+	"manifest_version": 2
+}
